@@ -1,77 +1,31 @@
-🏥 Hospital Patient Information Form
-A simple web application built with Express.js, EJS, and PostgreSQL that collects and stores patient information through a user-friendly form.
+# 🏥 Hospital Patient Information Form
 
-🚀 Features
-Collects patient details: name, age, gender, contact, and disease
+A simple web application built with **Express.js**, **EJS**, and **PostgreSQL** that collects and stores patient information through a user-friendly form.
 
-Stores data in a PostgreSQL database
+---
 
-Renders forms using EJS templates
+## 🚀 Features
 
-Organized structure with static files served from a public folder
+- Collects patient details: name, age, gender, contact, and disease
+- Stores submitted data in a PostgreSQL database
+- Renders form using EJS templates
+- Serves static files from a `public/` folder
 
-🛠️ Technologies Used
-Node.js & Express.js – Web server framework
+---
 
-EJS – Templating engine
+## 🛠️ Technologies Used
 
-PostgreSQL – Relational database
+- **Node.js & Express.js** – Web server framework
+- **EJS** – Templating engine for rendering views
+- **PostgreSQL** – Relational database
+- **HTML/CSS** – Frontend form design
 
-HTML/CSS – For form design (in public/)
+---
 
-🧾 Setup Instructions
-Clone the repository
+## 🧾 Setup Instructions
 
-bash
-Copy
-Edit
+### 1. Clone the repository
+
+```bash
 git clone <repo-url>
 cd hospital-form-app
-Install dependencies
-
-bash
-Copy
-Edit
-npm install
-Setup PostgreSQL Database
-
-Create a database named Hospital
-
-Create a table:
-
-sql
-Copy
-Edit
-CREATE TABLE information (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(100),
-  age INT,
-  gender VARCHAR(10),
-  contact VARCHAR(15),
-  disease TEXT
-);
-Start the server
-
-bash
-Copy
-Edit
-node index.js
-Visit in browser
-
-arduino
-Copy
-Edit
-http://localhost:3000
-📁 Project Structure
-csharp
-Copy
-Edit
-hospital-form-app/
-│
-├── public/            # Static files (CSS, images)
-├── views/             # EJS templates
-│   └── index.ejs
-├── index.js           # Main Express app
-├── package.json
-📬 Feedback
-Feel free to contribute, report bugs, or suggest features to improve the project!
